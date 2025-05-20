@@ -93,7 +93,3 @@ Please refer to each platform's developer documentation for obtaining API keys.
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[Your chosen license]
