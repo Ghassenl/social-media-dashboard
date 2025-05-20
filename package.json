@@ -1,0 +1,26 @@
+{
+  "name": "social-media-dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "chart.js": "^4.4.1",
+    "pinia": "^3.0.2",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.5.13",
+    "vue-chartjs": "^5.3.0",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.2.4",
+    "vite-plugin-vue-devtools": "^7.7.2"
+  }
+}

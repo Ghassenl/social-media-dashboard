@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-darker text-text-primary min-h-screen w-full m-0 p-0;
+  }
+}
+
+#app {
+  @apply w-full min-h-screen;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+.card-hover {
+  @apply transition-transform duration-200 hover:transform hover:translate-y-[-5px];
+}
+
+/* Light mode styles */
+:root[data-theme="light"] {
+  --color-darker: #F8F9FE;
+  --color-dark: #FFFFFF;
+  --color-card: #F1F3FA;
+  --color-text-primary: #1D1F29;
+  --color-text-secondary: #63687D;
+}
+
+/* Dark mode styles */
+:root[data-theme="dark"] {
+  --color-darker: #1E2139;
+  --color-dark: #1F212E;
+  --color-card: #252945;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #8C98C6;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
